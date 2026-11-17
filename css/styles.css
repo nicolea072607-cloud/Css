@@ -73,7 +73,9 @@ main p {
     background-color: #c0caf7;
     padding: 1% 2%;
 }
-
+#info ul {
+    margin-left: 10%;
+}
 #contact {
     text-align: center;
 }
