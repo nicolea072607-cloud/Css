@@ -51,7 +51,7 @@ main {
     padding: 2%;
     background-color: #e5e9fc;
     overflow: auto;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 main p {
