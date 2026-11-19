@@ -77,7 +77,10 @@ text-decoration: none;
 font-weight: bold;
 }
 .map {
- /* Style rules for the table */
+    border: 5px solid #373684;
+}
+
+/* Style rules for the table */
 
 table {
     border: 1px solid #373684;
@@ -102,13 +105,10 @@ th {
     color: #ffffff;
     font-size: 1.15em;
 }
-
 tr:nth-child(odd) {
     background-color: #b7b7e1;
 }
-border: 5px solid #373684;
-}
- 
+
 /* Style rules for footer content */
 footer {
 text-align: center;
@@ -118,4 +118,38 @@ clear: left;
 footer a {
 color: #4645a8;
 text-decoration: none;
+}
+/* Media Query for Tablet Viewport */
+
+@media screen and (min-width: 550px), print {
+
+    /* Tablet Viewport: Show .tab-desk class, hide .mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header content */
+    span.tab-desk {
+        display: inline;
+    }
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.5em;
+        border-right: 1px solid #e5e9fc;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+        nav li a {
+        padding: 0.25em 0.5em;
+    }
+
 }
